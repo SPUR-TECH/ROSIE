@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="shortcut icon" href="assets/images/favicon.jpg">
 
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
-            emailjs.init("user_mOSm3S0G83bgO98dJ");
+            emailjs.init("mOSm3S0G83bgO98dJ");
         })();
     </script>
 </head>
@@ -80,7 +80,8 @@
                         required />
                     <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary"
                         placeholder="Project Description" required></textarea>
-                    <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
+                    <button type="submit" class="btn btn-secondary center-block" id="success">Send Project
+                        Request</button>
                 </form>
             </div>
         </div>
@@ -116,6 +117,8 @@
         </div>
     </footer>
     <script src="assets/js/sendEmail.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 </body>
 
 </html>
